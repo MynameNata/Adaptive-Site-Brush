@@ -4,6 +4,7 @@
 	<title>Brushed</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=500">
@@ -14,25 +15,50 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<!-- logo -->
-		<div class="row logo">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="img/logo_@2x.png" alt="Brushes">
-			</div>
-		</div>
-		<!-- slider -->
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slider">
-				<button class="back back1"></button>
-				<button class="back back2"></button>
-				<div class="slider_download">
-					<button class="slider_download_btn"></button>
-					<button class="slider_download_btn"></button>
-					<button class="slider_download_btn"></button>
+		<!-- carousel -->
+		<div class="row banner-carousel">
+			<div id="carousel-ecsemple-generik" class="carousel slide" data-ride='carousel'>
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+		    		<div class="item active">
+		    			<img src="http://lorempixel.com/1400/650/nature/5" alt="nature">
+			    	</div>
+
+			    	<div class="item">
+		    			<img src="http://lorempixel.com/1400/650/nature/2" alt="nature">
+			    	</div>
+
+			    	<div class="item">
+		    			<img src="http://lorempixel.com/1400/650/nature/3" alt="nature">
+			    	</div>
+
+			    	<div class="item">
+		    			<img src="http://lorempixel.com/1400/650/nature/7" alt="nature">
+			    	</div>
+
+			    	<div class="item">
+		    			<img src="http://lorempixel.com/1400/650/nature/9" alt="nature">
+			    	</div>
 				</div>
-				<button class="back back3"></button>
+			    
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    	<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    	<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>			
 			</div>
 		</div>
+	
 		<!-- menu -->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 menu box">
@@ -67,7 +93,7 @@
 				<h1 class="projects_head">our work</h1>
 				<p class="projects_head projects_head-text">check out our projects on <span class="text-red">dribbble</span></p>
 				<!-- sidebar -->
-				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 sidebar">
+				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 sidebar text-center">
 					<h3 class="sidebar_head">type of work</h3>
 					<ul class="sidebar_list">
 						<li class="siderbar_list-item"><a class="sidebar_link" href="#" title="all projects">all projects</a></li>
@@ -77,16 +103,34 @@
 					</ul>
 				</div>
 				<!-- picture -->
-				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 picture">
-					<a href="" class="pic pic-black"></a>
-					<a href="" class="pic pic-grey pic-grey-margin"></a>
-					<a href="" class="pic pic-black"></a>
-					<a href="" class="pic pic-grey"></a>
-					<a href="" class="pic pic-red"></a>
-					<a href="" class="pic pic-grey"></a>
-					<a href="" class="pic pic-black"></a>
-					<a href="" class="pic pic-grey pic-grey-margin"></a>
-					<a href="" class="pic pic-black"></a>
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 picture text-center">
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/9">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/10">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/2">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/3">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/4">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/5">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/6">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/7">
+					</a>
+					<a href="">
+						<img  class="pic" src="http://lorempixel.com/1400/650/city/8">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -96,9 +140,11 @@
 				<h1 class="about_head">about us</h1>
 				<p class="about_head about_head-text">Learn About our Team & Culture</p>
 
-				<!-- content -->
+				<!-- about -->
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 about_content box">
-					<a href="" class="about_content_pic"></a>
+					<a href="">
+						<img  class="about_content_pic" src="http://lorempixel.com/340/270/people/4">
+					</a>
 					<h3 class="about_content_head">John Doe</h3>
 					<p class="about_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et <a href="#" class="about_content_text-red">dolore magna</a> aliqua. Ut enim ad minim veniam,
@@ -111,7 +157,9 @@
 					<a href="" class="about_social about_social-clouse"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 about_content box">
-					<a href="" class="about_content_pic about_pic-red"></a>
+					<a href="">
+						<img  class="about_content_pic" src="http://lorempixel.com/340/270/people/9">
+					</a>
 					<h3 class="about_content_head">Jane Helf</h3>
 					<p class="about_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et <a href="#" class="about_content_text-red">dolore magna</a> aliqua. Ut enim ad minim veniam,
@@ -123,7 +171,9 @@
 					<a href="" class="about_social about_social-last"></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 about_content box">
-					<a href="" class="about_content_pic"></a>
+					<a href="">
+						<img  class="about_content_pic" src="http://lorempixel.com/340/270/people/3">
+					</a>
 					<h3 class="about_content_head">Joshua Insanus</h3>
 					<p class="about_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et <a href="#" class="about_content_text-red">dolore magna</a> aliqua. Ut enim ad minim veniam,
@@ -175,25 +225,22 @@
 		</div>
 		<!-- twitter -->
 		<div class="row twitter">
-			<div class="col-lg-1 col-lg-offset-6 col-md-1 col-md-offset-6 col-sm-1 col-sm-offset-6 col-xs-1 col-xs-offset-6 tweeter_box">
-				<a href="#" class="twitter_link"></a>
-			</div>
+			<a href="#" class="twitter_link"></a>
 		</div>
 		<!-- social -->
 		<div class="row social">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 social_box">
+			<div class="social_box">
 				<a href="#" class="social_box_link social1"></a>
 				<a href="#" class="social_box_link social2"></a>
-				<a href="#" class="social_box_link social3"></a>
+				<a href="https://vk.com/" class="social_box_link social3"></a>
 				<a href="#" class="social_box_link social4"></a>
 				<a href="#" class="social_box_link social5"></a>
 			</div>
 		</div>
 		<!-- footer -->
 		<div class="row footer">
-			<div class="col-lg-5 col-lg-offset-4 col-md-5 col-md-offset-4 col-sm-5 col-sm-offset-4 col-xs-5 col-xs-offset-4">
-				<p class="footer_text">©2013 brushed. <a href="" class="footer_text_link">Brushed Template</a> by <a href="" class="footer_text_link">Alessio Atzeni</a></p>
-			</div>
+			
+			<p class="footer_text">©2013 brushed. <a href="" class="footer_text_link">Brushed Template</a> by <a href="" class="footer_text_link">Alessio Atzeni</a></p>
 			
 		</div>
 	</div>
